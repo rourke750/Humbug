@@ -1786,7 +1786,7 @@ public class Humbug extends JavaPlugin implements Listener {
     }
     Player player = event.getPlayer();
     Entity vehicle = player.getVehicle();
-    if (vehicle == null || !(vehicle instanceof Minecart)) {
+    if (vehicle == null || !(vehicle instanceof Minecart || vehicle instanceof Horse)) {
       return;
     }
     Location vehicleLoc = vehicle.getLocation();
